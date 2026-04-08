@@ -6,3 +6,5 @@ jobs:
     runs-on: ubuntu-latest 
     steps: 
       - run: echo " Job is executing as part of Basic workflow"
+      - name: Build with Maven
+      run: mvn -B package --file pom.xml
